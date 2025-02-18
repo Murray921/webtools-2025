@@ -1,3 +1,47 @@
+/* Headers */
 h1 {
-    color: aqua;
+    font-style: oblique;
+    color: #f50505;
+    text-align: center;
+    text-decoration: underline;
+    background-color: black;
+    padding: 20px;
 }
+
+/*  Footer */
+footer {
+    text-align: center;
+    color: #f50505;
+}
+
+/* unvisited link */
+a:link {
+    color: #000;
+}
+
+/* Visited Link */
+a:visited {
+    color: #ff0000;
+}
+
+/* Hover Link */
+a:hover {
+    color: darkblue;
+}
+
+h2,h3,h4,h5 {
+    font-family:fantasy;
+    font-weight:lighter;
+}
+
+/* P Elements */
+p {
+    font-weight: bold;
+    color: #f50505;
+    font-style:italic
+    
+}
+
+/* Class */
+
+
