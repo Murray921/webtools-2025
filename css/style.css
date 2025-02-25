@@ -43,5 +43,15 @@ p {
 }
 
 /* Class */
+p.special{
+    color: black
+}
 
+P.special2{
+    color: #000;
+}
+
+p.special3{
+    color: aqua;
+}
 
