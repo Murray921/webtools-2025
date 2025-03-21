@@ -29,57 +29,61 @@ a:hover {
     color: darkblue;
 }
 
-h2,h3,h4,h5 {
-    font-family:cursive;
-    font-weight:lighter;
+h2,
+h3,
+h4,
+h5 {
+    font-family: cursive;
+    font-weight: lighter;
 }
 
 /* P Elements */
 p {
     font-weight: bold;
     color: #DC0404;
-    font-style:normal
-    
+    font-style: normal
 }
 
 /* Class */
-p.special{
+p.special {
     color: black
 }
 
-P.special2{
+P.special2 {
     color: #000;
 }
 
-.small_image{
+.small_image {
     height: 300px;
     width: 300px;
-    margin-left:-3.1%
+    margin-left: -3.1%
 }
 
-.New{
+.New {
     height: 300px;
     width: 300px;
-    margin-left:-3.1%
+    margin-left: -3.1%
 }
 
-.Acceptience{
+.Acceptience {
     height: 300px;
     width: 300px;
-    margin-left:-6.6%
+    margin-left: -6.6%
 }
 
-.Era{
+.Era {
     height: 300px;
     width: 300px;
-    margin-left:-3.1%
+    margin-left: -3.1%
 }
 
-.clickable{
+.clickable {
     height: 300px;
     width: 300px;
-    }
+}
 
-
-
-
+.list{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3px;
+}
