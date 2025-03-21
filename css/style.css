@@ -1,7 +1,7 @@
 /* Headers */
 h1 {
     font-style: oblique;
-    color: #f50505;
+    color: #D20404;
     text-align: center;
     text-decoration: underline;
     background-color: black;
@@ -54,9 +54,31 @@ P.special2{
 .small_image{
     height: 300px;
     width: 300px;
-    margin-left:-2.1%
+    margin-left:-3.1%
 }
 
+.New{
+    height: 300px;
+    width: 300px;
+    margin-left:-3.1%
+}
+
+.Acceptience{
+    height: 300px;
+    width: 300px;
+    margin-left:-6.6%
+}
+
+.Era{
+    height: 300px;
+    width: 300px;
+    margin-left:-3.1%
+}
+
+.clickable{
+    height: 300px;
+    width: 300px;
+    }
 
 
 
