@@ -85,6 +85,6 @@ P.special2 {
 .list{
     display: grid;
     grid-auto-flow: column;
-    gap: 3px;
+    gap: -10px;
 }
 
