@@ -12,6 +12,7 @@ h1 {
 footer {
     text-align: center;
     color: #DC0404;
+    margin-top: 400px;
 }
 
 /* unvisited link */
@@ -90,6 +91,7 @@ P.special2 {
 
 fieldset{
     color: #f00606;
+    width: 50px;
 }
 
 .contact{
@@ -97,5 +99,13 @@ fieldset{
     width: 50px;
     height: 300px;
     margin-left: 40%;
+}
+
+.Table{
+    color: #f30808;
+    width: 50px;
+    height: 300px;
+    margin-left: 40%;
+    margin-top: -400px;
 }
 
