@@ -89,6 +89,13 @@ P.special2 {
 }
 
 fieldset{
-    color: #D20404;
+    color: #f00606;
+}
+
+.contact{
+    color: #f30808;
+    width: 50px;
+    height: 300px;
+    margin-left: 40%;
 }
 
