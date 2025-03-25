@@ -188,7 +188,7 @@
     <fieldset>
         <legend>Meet The Author</legend>
 
-        <form id="Meet the Author" method="post" action="success.html">
+        <form id="Meet the Author" method="get" action="success.html">
             <p>
                 <label title="Select your city">City</label>
                 <select name="City">
@@ -201,18 +201,34 @@
             </p>
 
             <p>
-                <label for="Enter Full Name.">Name <input type="text"</label>
+                <label for="Enter Full Name.">First Name <input type="text" required></label>
             </p>
-
-
-
 
             <p>
-                <label title="Be Notified When Tickets Go Live"> Notify Me <input type="checkbox"
-                        name="Notify ME"></label>
-                <br>
-
+                <label for="Enter Full Name.">Last Name <input type="text" required></label>
+            <p>
+                <label for="Email"> Email <input type="text" required></label>
             </p>
+
+            <p>
+                <label for="Phone"> Phone <input type="text" required></label>
+            <p>
+                <label title="Be Notified When Tickets Go Live"> Notify Me <input type="checkbox"
+                        name="Notify"></label>
+                <br>
+            </p>
+
+            <p>
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+
+
 
 
 
