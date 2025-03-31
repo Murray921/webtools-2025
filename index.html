@@ -185,7 +185,7 @@
         <figcaption>A New Era Begins</figcaption>
     </figure>
 
-    <fieldset>
+    <fieldset class="Meet">
         <legend>Meet The Author</legend>
 
         <form id="Meet the Author" method="get" action="success.html">
@@ -237,25 +237,37 @@
 
     <fieldset class="Table">
         <form>
-            <table border="1" cellpadding="2">
-                <caption>Authors and Editors</caption>
-                <tr>
-                  <th colspan="3">These people were a great help.</th>
-                </tr>
-                <tr>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Role</th>
-                <tr>
-                  <th scope="row">Corey </th>
-                  <td>Murray Jr</td>
-                    <td>Author</td>
-                </tr>
-                <tr>
-                  <th scope="row">Jim</th>
-                  <td>Murphy </td>
-                    <td>Editor</td>
-                </tr>
+            <table>
+                <caption>Authors and editors</caption>
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th scope="col" abbr="Column 1" id="col1">Last Name</th>
+                    <th scope="col" abbr="Column 2" id="col2">Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Corey</th>
+                    <td headers="col1">Murray</td>
+                    <td headers="col2">Author</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Nike</th>
+                    <td headers="col1">Jones</td>
+                    <td headers="col2">Editor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">John</th>
+                    <td headers="col1">Mike</td>
+                    <td headers="col2">Editor</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Jim</th>
+                    <td headers="col1">Evens</td>
+                    <td headers="col2">Editor</td>
+                  </tr>
+                </tbody>
               </table>
 
         </form>
@@ -269,12 +281,11 @@
 
 
 
-    <hr>
-
-
     <footer>
-        <h3> CopyWrite © </h3>
-    </footer>
+        <h4> CopyWrite © </h4>
+
+
+    
 
     <ul>
 
@@ -282,7 +293,7 @@
 
         <li><a href="mailto:sherd@dallascollege.edu">Email The Author</a></li>
     </ul>
-
+    </footer>
 
 
 </body>
