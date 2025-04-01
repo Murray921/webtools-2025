@@ -1,11 +1,14 @@
 /* Headers */
 h1 {
     font-style: oblique;
-    color: #D20404;
+    color: #f0e9e9;
     text-align: center;
     text-decoration: underline;
     background-color: black;
-    padding: 20px;
+    padding: 70px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    clamp(2px, 3px, 5px);
 }
 
 /*  Footer */
@@ -137,6 +140,13 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: rgb(44, 42, 42);
 }
+
+.navbar {
+    background-color: #f5f1f1;
+    overflow: hidden;
+}
+
+
 
 
 

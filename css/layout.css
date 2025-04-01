@@ -1,0 +1,41 @@
+
+
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.small_image {
+    float:right;
+}
+
+.logo {
+    position: absolute;
+    top: 1em;
+    right: 3em;
+    clamp(2px, 3px, 5px);
+}
+
+.story {
+    content: "";
+    clear: both;
+    display: table;
+    border: solid medium #092834;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 900px;
+    margin: 1vw auto;
+  }
+
+  .contact-aside{
+    float: right;
+    width: 30%;
+    margin: 1vw;
+  }
+
+
