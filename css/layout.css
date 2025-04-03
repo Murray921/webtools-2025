@@ -1,17 +1,13 @@
-
-
-
-
-
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.small_image {
-    float:right;
-}
+.image-float {
+    float: right;
+}    
+
 
 .logo {
     position: absolute;
@@ -21,21 +17,38 @@
 }
 
 .story {
+    padding: 0 2em;
     content: "";
     clear: both;
     display: table;
     border: solid medium #092834;
     border-radius: 10px;
-    width: 90%;
-    max-width: 1000px;
-    min-width: 900px;
+    width: 200%;
+    max-width: 900px;
+    min-width: 500px;
     margin: 1vw auto;
-  }
+}
 
-  .contact-aside{
-    float: right;
-    width: 30%;
-    margin: 1vw;
-  }
+.small_image {
+    height: 185px;
+    width: 185px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.figcaption {
+    text-align: right;
+    clear: both;
+    color: #2E6C85;
+}
 
+.p {
+    margin: 500px;
+    line-height: 1.35;
+    margin-top: 5em;
+
+}
+
+* {
+    padding: 0;
+}
