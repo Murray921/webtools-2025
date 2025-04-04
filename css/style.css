@@ -107,7 +107,7 @@ fieldset {
 }
 
 .Table {
-    margin-top: -790px;
+    margin-top: -410px;
     margin-left: 500px;
     border-collapse: collapse;
     width: 10%;
@@ -144,6 +144,24 @@ tbody tr:hover {
 .navbar {
     background-color: #f5f1f1;
     overflow: hidden;
+}
+
+.Meet {
+    float: left;
+    display: block;
+    color: #131212;
+    text-align: center;
+    padding: 15px 50px;
+    text-decoration: none;
+}
+
+.Author {
+    float: right;
+    display: block;
+    color: #131212;
+    text-align: center;
+    padding: 90px 50px;
+    text-decoration: none;
 }
 
 

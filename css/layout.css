@@ -29,6 +29,21 @@
     margin: 1vw auto;
 }
 
+.container {
+    padding: 0 3em;
+    content: "";
+    clear: both;
+    display: table;
+    border: solid medium #092834;
+    border-radius: 20px;
+    width: 200%;
+    max-width: 900px;
+    min-width: 500px;
+    margin: 1vw auto;
+    
+    
+}
+
 .small_image {
     height: 185px;
     width: 185px;
@@ -51,4 +66,8 @@
 
 * {
     padding: 0;
+}
+
+.Float_left {
+    float: left;
 }
