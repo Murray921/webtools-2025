@@ -8,7 +8,7 @@ h1 {
     padding: 70px;
     margin-top: 2px;
     margin-bottom: 2px;
-    clamp(2px, 3px, 5px);
+    margin: clamp(2px, 3px, 5px);
 }
 
 /*  Footer */
@@ -17,7 +17,7 @@ footer {
     color: #DC0404;
     margin-top: 500px;
     padding: 10px;
-    
+
 }
 
 /* unvisited link */
@@ -164,7 +164,62 @@ tbody tr:hover {
     text-decoration: none;
 }
 
+.title {
+    float: center;
+    display: block;
+    color: #e4dbdb;
+    text-align: center;
+    padding: 90px 50px;
+    text-decoration: none;
+}
 
+nav {
+    flex: 0 1 15%;
+    padding: 20px;
+    background-color: rgb(229, 236, 229);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;    
+    margin: 0 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
 
+    nav:hover {
+        background-color: #f0f0f0;
+        transform: scale(1.05);
+        transition: background-color 0.3s, transform 0.3s;
+    }
 
+    nav li {
+        list-style: none;
+        margin: 10px 0;
+        border-bottom: 20px solid #f0f0f0;
+    }
+    
+    .team-member {
+        display: flexbox;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
+    .team-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0px;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
