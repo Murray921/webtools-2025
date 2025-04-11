@@ -199,7 +199,7 @@ nav {
         border-bottom: 20px solid #f0f0f0;
     }
     
-    .team-member {
+    team-member {
         display: flexbox;
         display: flex;
         flex-direction: row;
