@@ -183,7 +183,7 @@ main {
 
 
 
-nav {
+.navbar {
     display: block;
     unicode-bidi: isolate;
     flex: 0 1 15%;
@@ -199,13 +199,13 @@ nav {
     cursor: pointer;
 }
 
-nav:hover {
+.navbar:hover {
     background-color: #f0f0f0;
     transform: scale(1.05);
     transition: background-color 0.3s, transform 0.3s;
 }
 
-nav li {
+.navbar li {
     list-style: none;
     margin: 10px 0;
     border-bottom: 20px solid #f0f0f0;
@@ -214,13 +214,14 @@ nav li {
 .team-member {
     display: flexbox;
     display: flex;
+    text-align: end 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 22px;
+    margin: 0 2px;
     padding: 40px;
-    background-color: #f0f0f0;
-    border-radius: 1px;
+    background-color: #ebe4e4;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
@@ -234,9 +235,10 @@ nav li {
     align-items: center;
     justify-content: center;
     margin: 0 0px;
-    padding: 20px;
-    background-color: #f0f0f0;
+    padding: 10px;
+    background-color: #0e0d0d;
     border-radius: 10px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -264,5 +266,9 @@ footer {
     height: 200px;
     width: 200px;
     margin-left: -3.1%
+}
+
+.Header {
+    color: #f6f5f5;
 }
 
