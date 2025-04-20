@@ -71,3 +71,50 @@
 .Float_left {
     float: left;
 }
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "nav1 nav2 nav3";
+        align-self: auto;
+}
+
+.nav1 {
+    grid-area: nav1;
+}
+
+.teammember {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "team1 team2 team3"
+        "team4 team5 team6";
+    align-self: auto;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "footer1"
+        align-self: auto;
+}
+
+.title {
+    display: grid;
+    grid-template-columns: repeat(0, 0fr);
+    grid-template-rows: repeat(0, 0fr);
+    grid-template-areas: 
+        "title title title"
+        "nav1 nav2 nav3";
+        align-self: auto;
+}
