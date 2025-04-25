@@ -74,28 +74,27 @@
         // Hint: Use document.getElementById() to select the button.
         // Check the article for step-by-step guidance!
 
-        
+
         const button = document.querySelector('#theme-toggle-container');
 
-        button.addEventListener('click', () => {
-            console.log('Theme toggled!');
-            document.body.classList.toggle('dark');
-        });
-
-        // Save a value to localStorage
-        localStorage.setItem('theme', 'dark');
-
-        // Retrieve the value
-        const theme = localStorage.getItem('theme');
-        console.log(`The selected theme is: ${dark ? 'dark' : 'light'}`);
-        // Apply the theme based on the saved value
-
-        // Check if the theme is dark and apply it
-        if (theme === 'dark') {
+        // Load saved theme on page load
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark') {
             document.body.classList.add('dark');
         } else {
             document.body.classList.remove('dark');
         }
+
+        console.log(`The selected theme is: ${savedTheme}`);
+
+        // One clean event listener
+        button.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+
+            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+            localStorage.setItem('theme', currentTheme);
+            console.log(`Theme toggled! Current theme: ${currentTheme}`);
+        });
 
     </script>
 </body>
