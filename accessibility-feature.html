@@ -1,82 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<<<<<<< HEAD
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accessibility Feature - Theme Toggle</title>
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                background-color: #ffffff;
-                color: #000000;
-                transition: background-color 0.3s, color 0.3s;
-            }
-
-            body.dark {
-                background-color: #000000;
-                color: #ffffff;
-            }
-
-            #theme-toggle-container {
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                cursor: pointer;
-            }
-
-            .icon {
-                width: 36px;
-                height: 36px;
-                display: inline-block;
-                background-image: url('accessible-icon.png');
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            .content {
-                padding: 20px;
-                text-align: center;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-
-            p {
-                font-size: 1.25rem;
-                line-height: 1.5;
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <div id="theme-toggle-container">
-            <span class="icon" aria-label="Accessibility Icon"></span>
-        </div>
-
-        <main class="content">
-            <h1>Welcome to the Accessibility Feature Demo</h1>
-            <p>
-                This page demonstrates a simple light/dark theme toggle feature implemented using JavaScript.
-                Click the icon in the upper-right corner to switch between themes. Your preference will be saved for future visits.
-            </p>
-        </main>
-
-        <script>
-            // TODO: Add JavaScript here to handle theme toggling.
-            // Hint: Use document.getElementById() to select the button.
-            // Check the article for step-by-step guidance!
-        </script>
-    </body>
-
-</html>
-=======
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -153,28 +77,27 @@
         
         const button = document.querySelector('#theme-toggle-container');
 
-        button.addEventListener('click', () => {
-            console.log('Theme toggled!');
-            document.body.classList.toggle('dark');
-        });
+// Load saved theme on page load
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+} else {
+    document.body.classList.remove('dark');
+}
 
-        // Save a value to localStorage
-        localStorage.setItem('theme', 'dark');
+console.log(`The selected theme is: ${savedTheme}`);
 
-        // Retrieve the value
-        const theme = localStorage.getItem('theme');
-        console.log(`The selected theme is: ${dark ? 'dark' : 'light'}`);
-        // Apply the theme based on the saved value
+// One clean event listener
+button.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
 
-        // Check if the theme is dark and apply it
-        if (theme === 'dark') {
-            document.body.classList.add('dark');
-        } else {
-            document.body.classList.remove('dark');
-        }
+    const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', currentTheme);
+    console.log(`Theme toggled! Current theme: ${currentTheme}`);
+
+
 
     </script>
 </body>
 
 </html>
->>>>>>> e227d772d75df079d174be1389ab9ccd653f8b1f
