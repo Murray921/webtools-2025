@@ -96,7 +96,7 @@ P.special2 {
 
 fieldset {
     color: #f00606;
-    width: 50px;
+    width: px;
 }
 
 .contact {
@@ -246,23 +246,25 @@ main {
     box-sizing: border-box;
 }
 
+
+
 footer {
     margin: 0px;
-    
+
     text-align: center;
     background-color: brown;
     width: 100%;
     padding: 20px;
-    position:relative;
+    position: relative;
     bottom: 0px;
-  }
-  
-  footer p {
+}
+
+footer p {
     color: #FFF;
     font-size: 2vw;
-  }
+}
 
-  .smaller_image {
+.smaller_image {
     height: 200px;
     width: 200px;
     margin-left: -3.1%
@@ -271,7 +273,3 @@ footer {
 .Header {
     color: #f6f5f5;
 }
-
-
-  
-    
