@@ -53,7 +53,7 @@
     </style>
 </head>
 
-<body class="dark">
+<body>
 
     <div id="theme-toggle-container">
         <span class="icon" aria-label="Accessibility Icon"></span>
@@ -74,22 +74,30 @@
         // Hint: Use document.getElementById() to select the button.
         // Check the article for step-by-step guidance!
 
-        
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.querySelector('#theme-toggle-container');
 
+            // Load saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                document.body.classList.add('dark');
+            }
 
+            // Add click listener only after button is available
+            if (button) {
+                button.addEventListener('click', () => {
+                    document.body.classList.toggle('dark');
 
-        console.log(`The selected theme is: ${savedTheme}`);
+                    // Save the selected theme
+                    const isDark = document.body.classList.contains('dark');
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
 
-
-        // One clean event listener
-        button.addEventListener('click', () => {
-            document.body.classList.toggle('dark');
-
-            const currentTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
-            localStorage.setItem('theme', currentTheme);
-            console.log(`Theme toggled! Current theme: ${currentTheme}`);
+                    console.log(`Theme set to ${isDark ? 'dark' : 'light'}`);
+                });
+            } else {
+                console.error('Button with ID #theme-toggle-container not found.');
+            }
         });
-
 
     </script>
 </body>
